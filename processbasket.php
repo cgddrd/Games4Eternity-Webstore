@@ -18,7 +18,7 @@ function addItem($itemTitle, $itemPlatform) {
 
 	$itemExists = false; //Boolean used to determine if product being added already exists in the basket
 
-	$conn = dbConnect("db.dcs.aber.ac.uk", "5432", "teaching", "csguest", "rohishe"); //Connect to database
+	$conn = dbConnect("db.dcs.aber.ac.uk", "5432", "teaching", "csguest", "r*****e"); //Connect to database
 	
 	//If the connection cannot be established, abort and display error message
 	if (!$conn) {
