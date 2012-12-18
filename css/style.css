@@ -1,0 +1,488 @@
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/bebasneue-webfont.eot');
+    src: url('../fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue-webfont.woff') format('woff'),
+         url('../fonts/bebasneue-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue-webfont.svg#bebasneueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    font-weight: normal;
+
+}
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+	padding-bottom: 180px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -180px; /* negative value of footer height */
+	height: 180px;
+	clear:both;} 
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+#betabar{
+
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 0.5em;
+	background-color: #333;
+	width: 100%;
+	color: #eee;
+	text-align: center;
+
+}
+
+
+#container {
+
+width:80%;
+background: #ccc;
+margin: 0 auto;
+padding:20px;
+overflow: hidden;
+
+}
+
+#container h1.title{
+
+text-align: left;
+font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+font-size: 4em;
+margin-left: 5%;
+margin-top:30px;
+
+}
+
+#container h2.warning {
+
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: #d61442;
+font-size: 14px;
+font-weight: bold;
+text-align: left;
+margin-left: 5%;
+margin-top: 20px
+}
+
+#container h2.rightalign {
+
+text-align: right;
+margin-right: 8%;
+margin-bottom: 10px;
+
+}
+
+#container h2.index {
+
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: #333;
+font-size: 14px;
+text-align: left;
+margin-left: 5%;
+margin-top: 20px;
+}
+
+#container h2.checkout {
+
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: #333;
+font-size: 14px;
+text-align: left;
+margin-left: 5%;
+}
+
+#container h2.about {
+
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+color: #333;
+text-decoration: underline;
+font-size: 16px;
+text-align: left;
+margin-left: 5%;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+#container p {
+
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: #333;
+font-size: 14px;
+text-align: justify;
+margin-left: 6%;
+margin-right:6%;
+margin-bottom: 10px;
+}
+
+#container a.source {
+
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: #333;
+font-size: 14px;
+margin-left: 5%;
+}
+
+#container p.proddes {
+
+color: #eee;
+text-align: left;
+margin: 0;
+
+}
+
+#container li {
+
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: #333;
+font-size: 14px;
+text-align: justify;
+margin-left: 12%;
+padding-right:30%;
+margin-bottom: 10px;
+}
+
+#container a.nav {
+
+background-color: #333;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: #eee;
+font-size: 16px;
+float: right;
+padding: 5px;
+margin-right: 10px;
+text-decoration: none;
+}
+
+span.bold {
+
+	font-weight: bold;
+
+}
+
+fieldset {
+    border: 0;
+}
+
+
+#siteheader { 
+	margin: 0 auto;
+	width:100%;
+	/* background-color: #09B2D1; */
+	background-color: #eee;
+	border-bottom: #ccc solid 1px;
+	height: 65px; 
+	position: relative;
+}
+
+#logo {
+
+background-color: #000;
+text-align: center;
+color: #fff;
+position: absolute;
+margin-left: 10%;
+font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+}
+
+#logo a {
+
+margin-left: 10px;
+margin-right: 10px;
+text-decoration: none;
+font-size: 5em;
+color: #fff;
+
+}
+
+#logindisplay {
+
+text-align: center;
+font-size: 0.8em;
+color: #000;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+margin-top: 2px;
+padding: 5px;
+padding-right: 15px;
+border-right: 1px solid #000;
+float: right;
+}
+
+#logindisplay h1 {
+
+text-align: right;
+font-size: 1em;
+color: #000;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+margin-bottom: 5px;
+}
+
+.input {
+
+width:100px;
+
+}
+
+.addtobasket {
+    
+background: #eee;
+font-size: 1em;
+padding: 5px;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: #000;
+border: 0;
+margin-top: 10px;  
+}
+
+
+#basketdisplay {
+
+text-align: center;
+font-size: 0.4em;
+color: #000;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+margin-top: 10px;
+float:right;
+padding: 10px;
+margin-right: 10%;
+
+}
+
+#basketdisplay h1 {
+
+margin-top: 5px;
+float: left;
+
+}
+
+
+#basketdisplay a {
+
+float:left;
+background: #ccc;
+font-size: 1.7em;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: #000;
+text-decoration: none;
+margin-left: 10px;
+padding: 5px;
+}
+
+.button {
+
+background: #ccc;
+font-size: 12px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+color: #000;
+border:0;
+padding: 5px;
+
+}
+
+#tableselect {
+
+    color: #eee;
+    background: #333;
+    padding: 10px;
+    font-size: 0.8em;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+margin-bottom: 20px;
+float: right;
+margin-right: 8%;
+text-align: center;
+    
+}
+
+
+.smallcontainer {
+    
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: #eee;
+    background: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+.smallcontainer h1 {
+    
+    font-size: 16px;
+  
+}
+
+.smallcontainer h2 {
+    
+    margin-top: 10px;
+	font-size: 12px;
+  
+}
+
+.smallcontainer p {
+    
+    font-size: 12px;
+    
+}
+
+.left {
+    float: left;
+    width:64%;
+    height: 100%;
+    text-align: left;
+    padding: 5px;
+    padding-left: 20px;
+	border-right: 1px solid #eee;
+}
+
+.right {
+    float:left;
+    width: 32%;
+    height: 100%;
+    text-align: center;
+}
+
+.addform {
+    margin-top: 10px;
+    font-size: 12px;
+    
+}
+
+td
+{
+border: 2px solid #eee;
+color: #eee;
+background: #333;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+margin-bottom: 10px;
+}
+
+table {
+
+border-collapse:collapse;
+width:90%;
+margin: 0 auto;
+
+}
+
+td, th
+{
+padding:10px;
+}
+
+th {
+
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+font-weight: bold;
+
+}
+
+hr {
+margin-top: 40px;
+}
+
+hr.table {
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+span.baskettitle {
+
+font-size: 22px;
+
+}
+
+#totalprice {
+
+	margin-top: 30px;
+	color: #333;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 28px;
+	font-weight:bold;
+	text-align: right;
+	margin-right: 5%;
+	margin-bottom:10px;
+
+}
+
+#checkoutbuttonform {
+
+margin-right: 5%;
+margin-top: 10px;
+text-align: right;
+margin-bottom: 10px;
+
+}
+
+#custdetailsform {
+
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: #333;
+font-size: 14px;
+text-align: left;
+margin-left: 5%;
+margin-top:20px;
+margin-bottom: 30px;
+
+}
+
+#checkoutbutton {
+
+background: #333;
+font-size: 20px;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: #fff;
+border:0;
+padding: 5px;
+}
+
+#sitefooter{ 
+	padding-top: 10px;
+	bottom: 0;
+	margin: 0 auto;
+	width:100%;
+	background-color: #333;
+	border-bottom: #ccc solid 1px;
+	position: relative;
+	text-align: center;
+	/*padding-top: 10px; */
+	margin-top: -200px; /* negative value of footer height */
+	height: 200px;
+	clear:both;
+}
+
+#sitefooter h1 { 
+margin-top: 20px;
+font-size: 18px;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: #eee;
+
+}
+
+#sitefooter p { 
+
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 25%;
+padding-right: 25%;
+font-size: 12px;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: #eee;
+
+}
